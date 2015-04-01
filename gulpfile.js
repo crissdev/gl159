@@ -8,9 +8,8 @@ var gulpSourceMaps = require("gulp-sourcemaps");
 gulp.task("default", function() {
     return gulp.src("styles/*.less", {cwd: "src"})
         .pipe(gulpConcat("bundle.less"))
-         // Removing gulpSourceMaps seems to work just fine
         .pipe(gulpSourceMaps.init())
         .pipe(gulpLess())
-        .pipe(gulpSourceMaps.write("./dist"))
+        .pipe(gulpSourceMaps.write("./"))
         .pipe(gulp.dest("styles", {cwd: "dist"}));
 });

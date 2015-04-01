@@ -5,7 +5,7 @@
   "devDependencies": {
     "gulp-concat": "^2.5.2",
     "gulp": "^3.8.11",
-    "gulp-less": "^3.0.2",
+    "gulp-less": "git://github.com/plus3network/gulp-less.git#master",
     "gulp-sourcemaps": "^1.5.1"
   },
   "repository": {
